@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="nivo-slider/demo/style.css">
+<link rel="stylesheet" type="text/css" href="nivo-slider/nivo-slider.css">
+<script src="nivo-slider/demo/scripts/jquery-1.7.1.min.js" ></script>
+<script src="nivo-slider/jquery.nivo.slider.js" ></script>
+<script src="nivo-slider/jquery.nivo.slider.pack.js" ></script>
+
+<meta charset=	"utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<!-- esse é o topo -->
+	<div class="topo">
+		<div class="padrao"> 
+    		<label> 11 1234-1234 </label>
+    		<label> 11 1234-1234 </label>
+  	</div>
+	</div>
+<!-- esse é o menu -->
+  <div class="menu">
+    <div class="padrao">
+      <img  src="img/logo2.jpg">
+      <nav id="menu" class="direita">
+        <ul class="itensmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">EMPRESA</a>
+              <ul class="dropdown1">
+                  <li><a href="#">SUBMENU 1</a></li>
+                  <li><a href="#">SUBMENU 1</a></li>
+                  <li><a href="#">SUBMENU 1</a></li>
+                  <li class="d2"><a href="#">SUBMENU 1</a>
+                    <ul class="dropdown2">
+                      <li><a href="#">SUBMENU 2</a></li>
+                      <li><a href="#">SUBMENU 2</a></li>
+                      <li><a href="#">SUBMNEU 2</a></li>
+                      <li><a href="#">SUBMENU 2</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <li><a href="#">CLIENTES</a></li>
+          <li><a href="#">CONTATO</a></li>
+        </ul>
+      </nav> 
+    </div>
+  </div>
+
+<!-- esse é o slide -->
+  <div id="idslider" class="nivoSlider">
+    <img src="img/paisagem2.png">
+    <img src="img/paisagem-banner.jpg">
+  </div>
+<!-- esse é o conteudo com texto e imagem -->
+  <div class="texto-imagem padrao">
+    <div class="col-8">
+      <h1>TESTE DE HTML E CSS</h1>
+      <p>Quesitos de avaliação:</p>
+      <br>
+      <ul>
+        <li>Organização do código (quanto mais limpo melhor);</li>
+        <li>Nível de detalhismo (quanto mais idêntico melhor);</li>
+        <li>Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);</li>
+      </ul>
+      <br>
+      <p>Obrigado e boa sorte!</p> <br>
+    </div>
+    <div class="col-4">
+      <img src="img/menina.jpg">
+    </div>
+  </div>
+  <br>
+<!-- esse é o box de imagens -->
+  
+  <h1 class="padrao title">BOXES DE DESTAQUE</h1>
+  <div class="box padrao">  
+    <div class="col-3">
+       <img src="img/coracao.jpg">
+       <p><a href="https://www.idealtrends.com.br/" target="_blank">Sonhar grande e sonhar pequeno da o mesmo trabalho, então sonhe grande.</a></p>
+    </div>
+    <div class="col-3">
+        <img src="img/menino.jpg">
+        <p><a href="https://www.idealtrends.com.br/" target="_blank">Sonhar grande e sonhar pequeno da o mesmo trabalho, então sonhe grande.</a></p>
+    </div>
+    <div class="col-3">
+        <img src="img/arvores.jpg">
+        <p><a href="https://www.idealtrends.com.br/" target="_blank">Sonhar grande e sonhar pequeno da o mesmo trabalho, então sonhe grande.</a></p>
+    </div>
+    <div class="col-3">
+        <img src="img/pinguin.jpg">
+        <p><a href="https://www.idealtrends.com.br/" target="_blank">Sonhar grande e sonhar pequeno da o mesmo trabalho, então sonhe grande.</a></p>
+    </div>
+  </div>
+<!--esse é o rodapé -->
+  <div class="footer"><br>
+    <span><a href="#">HOME</a></span>
+    <span><a href="#">EMPRESA</a></span>
+    <span><a href="#">CLIENTES</a></span>
+    <span><a href="#">CONTATOS</a></span>
+    <p>RODAPE</p>
+  </div>
+</html>
+
+<script>
+  $(window).load(function(){
+    $('#idslider').nivoSlider();
+  })
+</script>
